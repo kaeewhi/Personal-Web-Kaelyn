@@ -28,7 +28,7 @@
         h1 {
             position: absolute;
             font-size: 16em;
-            margin-top: 300px;
+            margin-top: 200px;
             margin-left: 200px;
             margin-bottom: 0.1px;
             line-height: 180px;
@@ -38,7 +38,7 @@
             font-size: 1.5em;
             text-align: right;
             margin-right: 200px;
-            margin-top: 720px;
+            margin-top: 580px;
         }
 
         h3 {
@@ -47,7 +47,6 @@
             margin-top: 150px;
             text-align: center;
             color: #000000;
-
         }
 
         h4 {
@@ -71,28 +70,19 @@
             font-family: "Times", sans-serif;
             line-height: 45px;
         }
-
-        nav {
-            position: absolute;
-            top: 100px;
-            right: 200px;
+        
+      	aside {
             font-size: 1.5em;
-            background-color: rgba(252, 136, 194, 100);
-            padding: 14px;
-            border-radius: 45px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+            margin-left: 200px;
+           	margin-top: 100px;
+            color: rgba(255, 255, 255, 100);
         }
 
         .blog-post-container {
-						position: absolute;
-          	display: grid;
+            position: absolute;
+            display: grid;
             grid-template-columns: repeat(3, 1fr);
-						grid-auto-rows: minmax(10px, auto);
+            grid-auto-rows: minmax(10px, auto);
             gap: 30px;
             margin-top: 1500px;
             padding: 20px;
@@ -103,7 +93,7 @@
             padding: 10px;
             border-radius: 5px;
             overflow: hidden;
-          	height: auto;
+            height: auto;
         }
 
         .blog-post img {
@@ -119,6 +109,7 @@
 
         .content-container {
             width: 100%;
+            padding: 20px; /* Added padding */
         }
 
         .black-box {
@@ -159,7 +150,7 @@
 
         .gallery-container {
             position: absolute;
-          	left: -2px;
+            left: -2px;
             top: 3700px;
             width: 100%;
             display: grid;
@@ -182,14 +173,87 @@
             height: auto;
             border-radius: 10px;
         }
+
+        /* Additional Elements */
+
+        ul {
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Links */
+
+        a {
+            color: #4285f4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+      
+       nav {
+            position: absolute;
+            top: 100px;
+            right: 200px;
+            font-size: 1.5em;
+            background-color: rgba(252, 136, 194, 100);
+            padding: 14px;
+            border-radius: 45px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #333;
+        }
+
+        a:active {
+            color: #ff0000;
+        }
+
+        a:focus {
+            outline: none;
+        }
+
     </style>
 </head>
 
 <body>
 
     <header>
+          <aside>VISIT MY <a href="https://www.instagram.com/_kaelynwhite/" target="_blank">INSTAGRAM</a> 
+         FOR MORE CONTENT.<br>CONTACT ME VIA EMAIL: <a href="kj2white@uwaterloo.ca">kj2white@uwaterloo.ca</a></aside>
+      
         <h1><b>THE WEEKEND.</b></h1>
         <h2><i>A BLOG BY KAELYN WHITE</i></h2>
+
         <h3>
             "ENJOY MY MOST MEMORABLE WEEKENDS THROUGH MY DIGITAL SCRAPBOOK"
         </h3>
@@ -198,7 +262,7 @@
             <a href="#posts">Posts</a>
             <a href="#gallery">Gallery</a>
         </nav>
-      
+
     </header>
 
     <div class="content-container">
@@ -212,99 +276,123 @@
                 </i></h6>
         </div>
 
-        <img class="box-image" src="Halloween3.jpeg" alt="Description of the image">
+        <img class="box-image" src="Halloween3.jpeg" alt="2 Girls Posing">
     </div>
-    
-  <div id="posts" class="blog-post-container">
+
+    <div id="posts" class="blog-post-container">
         <div class="blog-post">
             <img src="WesternU.jpg" alt="Blog Image" width="600" height="400">
             <div class="caption">
                 <h4>NOV 18, 2023</h4>
                 <h5>Western University</h5>
                 <p>One of my best friends, Brooke, goes to Western Univeristy. She invited me to spend time with her and go out. We went to a local bar called Delilah's. It was a good time, but it was so busy, everyone was shoulder-to-shoulder.
-              I also got to see some of he school friends who I haven't seen in a while. We pregamed at their appartment and went out all together. It was a good time, I can't wait to go back again!</p>
+                    I also got to see some of he school friends who I haven't seen in a while. We pregamed at their appartment and went out all together. It was a good time, I can't wait to go back again!</p>
             </div>
-      </div>
+        </div>
         <div class="blog-post">
-             <img src="Cooking.jpg" alt="Blog Image" width="600" height="400">
+            <img src="Cooking.jpg" alt="Blog Image" width="600" height="400">
             <div class="caption">
                 <h4>NOV 11, 2023</h4>
                 <h5>Kitchen Darty</h5>
                 <p>My typical weekend I usually go with the flow. This weekend I ended up having people over during the day. We make snacks and drinks and spent hours in the hottub.
-                  It was a good time catching up with people I haven't seen in a while, but nonetheless very random! Later that evening we watched hockey and played some of our favourite games by jackbox.tv.
-                  The games are so fun to play as a group, especially Drawful.
-                  </p>
+                    It was a good time catching up with people I haven't seen in a while, but nonetheless very random! Later that evening we watched hockey and played some of our favourite games by jackbox.tv.
+                    The games are so fun to play as a group, especially Drawful.
+                </p>
             </div>
         </div>
         <div class="blog-post">
-             <img src="Halloween.jpeg" alt="Blog Image" width="600" height="400">
+            <img src="Halloween.jpeg" alt="Blog Image" width="600" height="400">
             <div class="caption">
                 <h4>OCT 28, 2023</h4>
                 <h5>Halloweekend Vol.2</h5>
                 <p>This Halloween my girls and I dressed up as Harry Potter characters. I was Hermione, Avery was Draco, and Meghan was Dobby. It was a fun costume and we spent lot's of time putting it together.
-              This evening we ended up going to Kentucky in Waterloo and had a great time! </p>
+                    This evening we ended up going to Kentucky in Waterloo and had a great time! </p>
             </div>
         </div>
-    <div id="read-more-btn">
+        <div id="read-more-btn">
+            <div class="blog-post">
+                <img src="Russia.jpg" alt="Blog Image" width="600" height="400">
+                <div class="caption">
+                    <h4>OCT 27, 2023</h4>
+                    <h5>Halloweekend Vol.1</h5>
+                    <p>Last minute we decided to go out again for halloween,so we dressed up as characters from a movie that we made up because we didn’t have costumes. We called ourselves Petra and Aneska.
+                        I pieced together random clothes from in my closet and called it a costume. Who would question us anyways?</p>
+                </div>
+            </div>
+        </div>
         <div class="blog-post">
-            <img src="Russia.jpg" alt="Blog Image" width="600" height="400">
-            <div class="caption">
-                <h4>OCT 27, 2023</h4>
-                <h5>Halloweekend Vol.1</h5>
-                <p>Last minute we decided to go out again for halloween,so we dressed up as characters from a movie that we made up because we didn’t have costumes. We called ourselves Petra and Aneska.
-              I pieced together random clothes from in my closet and called it a costume. Who would question us anyways?</p>
-    </div>
-      </div>
-    </div>
-        <div class="blog-post">
-               <img src="MeghanBirthday.jpeg" alt="Blog Image" width="600" height="400">
+            <img src="MeghanBirthday.jpeg" alt="Blog Image" width="600" height="400">
             <div class="caption">
                 <h4>OCT 13, 2023</h4>
                 <h5>Meghan's Birthday</h5>
                 <p>Meghan's birthday was a great time. Early on in the day Avery and I invited her over to surprise her with a bottle of champagne, balloons, and gifts.
                     I bought her some of her favorite makeup, and Avery got her a Zach Bryan flag. In the evening, we went out to the bar Kentucky in Waterloo. We shared good drinks, spent some time with the DJ, and met some new people.
                     It was a good night.</p>
-        </div>
+            </div>
         </div>
         <div class="blog-post">
-               <img src="Maneskin.jpeg" alt="Blog Image" width="600" height="400">
+            <img src="Maneskin.jpeg" alt="Blog Image" width="600" height="400">
             <div class="caption">
                 <h4>SEP 27, 2023</h4>
                 <h5>Måneskin Concert</h5>
-                <p>WOOOOWWW! I love the band Måneskin and I finally got to go to their concert in Toronto! I went with my friend Avery and my parents drove us and took us to Real Sports Bar first for some drinks and appetizers. 
-                  The concert was amazing and I would 100% go again! They played all of my favourite songs and really know how to put on a show. </p>
+                <p>WOOOOWWW! I love the band Måneskin and I finally got to go to their concert in Toronto! I went with my friend Avery and my parents drove us and took us to Real Sports Bar first for some drinks and appetizers.
+                    The concert was amazing and I would 100% go again! They played all of my favourite songs and really know how to put on a show. </p>
+            </div>
         </div>
-        </div>
-     </div>
-  
-	<div id="gallery" class="gallery-container">
+    </div>
 
+    <div id="gallery" class="gallery-container">
         <div class="gallery-item">
             <img src="Selfie.jpg" alt="Image 1">
         </div>
-
         <div class="gallery-item">
             <img src="Boys.jpg" alt="Image 2">
         </div>
-
         <div class="gallery-item">
             <img src="Murphy's.jpg" alt="Image 3">
         </div>
-
         <div class="gallery-item">
             <img src="Boys2.jpg" alt="Image 4">
         </div>
-
         <div class="gallery-item">
             <img src="Smirk.jpg" alt="Image 5">
         </div>
-
         <div class="gallery-item">
             <img src="AveryNolan.jpg" alt="Image 6">
         </div>
     </div>
 
-        
+    <!-- Table of Contents -->
+    <ul>
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+    </ul>
+
+    <!-- External Link -->
+    <p>Visit my <a href="https://www.instagram.com/_kaelynwhite/" target="_blank">Instagram</a> for more content.</p>
+
+    <!-- Email Link -->
+    <p>Contact me via email: <a href="kj2white@uwaterloo.ca">kj2white@uwaterloo.ca</a></p>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+    <!-- Form (Optional) -->
+    <!-- Add your form elements here -->
+
 </body>
 
 </html>
