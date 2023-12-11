@@ -44,7 +44,7 @@
         h3 {
             font-size: 2.5em;
             margin-bottom: 15px;
-            margin-top: 150px;
+            margin-top: 165px;
             text-align: center;
             color: #000000;
         }
@@ -72,7 +72,7 @@
         }
         
       	aside {
-            font-size: 1.5em;
+            font-size: 1em;
             margin-left: 200px;
            	margin-top: 100px;
             color: rgba(255, 255, 255, 100);
@@ -126,9 +126,10 @@
         .box-image {
             position: absolute;
             margin-top: 1020px;
-            margin-left: 300px;
+        
             width: 580px;
             height: 440px;
+          	float: left;
         }
 
         .read-more-btn {
@@ -177,13 +178,17 @@
         /* Additional Elements */
 
         ul {
+          	position: absolute;
             list-style-type: none;
-            margin: 20px 0;
             padding: 0;
+            color: rgba(252, 136, 194, 100);
+         		margin-top: 100px;
+          	margin-left: 1450px;
+          	font-size: 1.5em;
         }
 
         ul li {
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
 
         table {
@@ -201,29 +206,11 @@
         th {
             background-color: #f2f2f2;
         }
-
-        /* Links */
-
+      
         a {
-            color: #4285f4;
+            color: rgba(252, 136, 194, 100);
             text-decoration: none;
             font-weight: bold;
-        }
-      
-       nav {
-            position: absolute;
-            top: 100px;
-            right: 200px;
-            font-size: 1.5em;
-            background-color: rgba(252, 136, 194, 100);
-            padding: 14px;
-            border-radius: 45px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
         }
 
         a:hover {
@@ -257,18 +244,13 @@
         <h3>
             "ENJOY MY MOST MEMORABLE WEEKENDS THROUGH MY DIGITAL SCRAPBOOK"
         </h3>
-      
-        <nav>
-            <a href="#posts">Posts</a>
-            <a href="#gallery">Gallery</a>
-        </nav>
 
     </header>
 
     <div class="content-container">
 
-        <div class="black-box">
-            <a href="#read" class="read-more-btn"><b>READ MORE</b></a>
+        <div class="black-box" id="read">
+            <a href="#posts" class="read-more-btn"><b>READ MORE</b></a>
             <h6><i>
                     <br>“We dressed up as characters
                     <br>from a movie that we made up
@@ -276,12 +258,12 @@
                 </i></h6>
         </div>
 
-        <img class="box-image" src="Halloween3.jpeg" alt="2 Girls Posing">
+        <img class="box-image" src="Halloween3.jpeg" alt="2 girls wea">
     </div>
 
     <div id="posts" class="blog-post-container">
         <div class="blog-post">
-            <img src="WesternU.jpg" alt="Blog Image" width="600" height="400">
+            <img src="WesternU.jpg" alt="2 Girls in a Bar" width="600" height="400">
             <div class="caption">
                 <h4>NOV 18, 2023</h4>
                 <h5>Western University</h5>
@@ -290,7 +272,7 @@
             </div>
         </div>
         <div class="blog-post">
-            <img src="Cooking.jpg" alt="Blog Image" width="600" height="400">
+            <img src="Cooking.jpg" alt="People in a kitchen" width="600" height="400">
             <div class="caption">
                 <h4>NOV 11, 2023</h4>
                 <h5>Kitchen Darty</h5>
@@ -301,7 +283,7 @@
             </div>
         </div>
         <div class="blog-post">
-            <img src="Halloween.jpeg" alt="Blog Image" width="600" height="400">
+            <img src="Halloween.jpeg" alt="3 girls dressed up for halloween" width="600" height="400">
             <div class="caption">
                 <h4>OCT 28, 2023</h4>
                 <h5>Halloweekend Vol.2</h5>
@@ -311,7 +293,7 @@
         </div>
         <div id="read-more-btn">
             <div class="blog-post">
-                <img src="Russia.jpg" alt="Blog Image" width="600" height="400">
+                <img src="Russia.jpg" alt="2 girls wearing sunglasses" width="600" height="400">
                 <div class="caption">
                     <h4>OCT 27, 2023</h4>
                     <h5>Halloweekend Vol.1</h5>
@@ -321,7 +303,7 @@
             </div>
         </div>
         <div class="blog-post">
-            <img src="MeghanBirthday.jpeg" alt="Blog Image" width="600" height="400">
+            <img src="MeghanBirthday.jpeg" alt="Girl with happy birthday sign" width="600" height="400">
             <div class="caption">
                 <h4>OCT 13, 2023</h4>
                 <h5>Meghan's Birthday</h5>
@@ -331,7 +313,7 @@
             </div>
         </div>
         <div class="blog-post">
-            <img src="Maneskin.jpeg" alt="Blog Image" width="600" height="400">
+            <img src="Maneskin.jpeg" alt="Girl at concert" width="600" height="400">
             <div class="caption">
                 <h4>SEP 27, 2023</h4>
                 <h5>Måneskin Concert</h5>
@@ -362,19 +344,12 @@
         </div>
     </div>
 
-    <!-- Table of Contents -->
+  
     <ul>
-        <li><a href="#posts">Posts</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#posts">POSTS</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
     </ul>
 
-    <!-- External Link -->
-    <p>Visit my <a href="https://www.instagram.com/_kaelynwhite/" target="_blank">Instagram</a> for more content.</p>
-
-    <!-- Email Link -->
-    <p>Contact me via email: <a href="kj2white@uwaterloo.ca">kj2white@uwaterloo.ca</a></p>
-
-    <!-- Table -->
     <table>
         <tr>
             <th>Header 1</th>
@@ -389,9 +364,6 @@
             <td>Data 4</td>
         </tr>
     </table>
-
-    <!-- Form (Optional) -->
-    <!-- Add your form elements here -->
 
 </body>
 
