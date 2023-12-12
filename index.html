@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: "Arial", sans-serif;
-            background-color: rgba(255, 255, 255, 100);
+            background-color: #ffffff;
         }
 
         header {
@@ -75,7 +75,7 @@
             font-size: 1em;
             margin-left: 200px;
            	margin-top: 100px;
-            color: rgba(255, 255, 255, 100);
+            color: #ffffff;
         }
 
         .blog-post-container {
@@ -89,7 +89,7 @@
         }
 
         .blog-post {
-            background-color: rgba(255, 255, 255, 100);
+            background-color: #ffffff;
             padding: 10px;
             border-radius: 5px;
             overflow: hidden;
@@ -135,7 +135,7 @@
         .read-more-btn {
             position: absolute;
             display: block;
-            background-color: rgba(255, 255, 255, 100);
+            background-color: #ffffff;
             color: #000000;
             font-size: 1.5em;
             padding: 10px;
@@ -146,7 +146,6 @@
             margin-left: 1200px;
             width: 200px;
             height: 30px;
-            z-index: 1;
         }
 
         .gallery-container {
@@ -175,7 +174,37 @@
             border-radius: 10px;
         }
 
-        /* Additional Elements */
+        .subscribe-form {
+            max-width: 600px;
+            margin: 20px auto;
+          	position: absolute;
+          	margin-top: 3360px;
+          	margin-left: 1000px;
+        }
+
+        .subscribe-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .subscribe-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .subscribe-form input[type="submit"] {
+            background-color: #ffffff;
+            color: rgba(252, 136, 194, 100);
+            font-size: 1.5em;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 45px;
+            cursor: pointer;
+        }
 
         ul {
           	position: absolute;
@@ -192,19 +221,23 @@
         }
 
         table {
-            width: 100%;
+            width: 40%;
             border-collapse: collapse;
-            margin-top: 20px;
+          	position: absolute;
+         		margin-left: 180px;
+          	margin-top: 3950px;
         }
 
         th, td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
+          	font-size: 1.5em;
         }
 
         th {
             background-color: #f2f2f2;
+          	color: rgba(252, 136, 194, 100);
         }
       
         a {
@@ -352,18 +385,34 @@
 
     <table>
         <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
+            <th>Social Media</th>
+            <th>Handle</th>
         </tr>
         <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
+            <td>Instagram</td>
+            <td>@_kaelynwhite</td>
         </tr>
         <tr>
-            <td>Data 3</td>
-            <td>Data 4</td>
+            <td>Snapchat</td>
+            <td>@kaewhi</td>
+        </tr>
+      <tr>
+            <td>VSCO</td>
+            <td>@kaelynwhite</td>
         </tr>
     </table>
+      <div class="subscribe-form">
+        <h2>SUBSCRIBE TO MY BLOG</h2>
+        <form action="/subscribe.php" method="post">
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Your First Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+            <input type="submit" value="Subscribe">
+        </form>
+    </div>
 
 </body>
 
